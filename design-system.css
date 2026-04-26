@@ -1,0 +1,31 @@
+:root {
+    /* ===================== */
+    /* 🎨 Color System */
+    /* ===================== */
+
+    /* Brand */
+    --color-primary-500: #ff6E06;
+    --color-primary-600: #ec6337;
+    --color-secondary: #064C8C;
+
+    /* Neutral */
+    --color-black: #191c23;
+    --color-gray-500: #9ea6b7;
+    --color-gray-300: #e3e6ed;
+
+    /* Text */
+    --color-text-primary: #252932;
+    --color-text-secondary: #505563;
+
+    /* Button */
+    --btn-header: #da3743;
+    --btn-primary: #064C8C;
+    --btn-secondary: #ec6337;
+
+    /* ===================== */
+    /* 🔤 Typography */
+    /* ===================== */
+
+    --font-family-base: 'Noto Sans Japanese-Normal', sans-serif;
+    --font-family-secondary: "Arial Black", Arial, sans-serif;
+}

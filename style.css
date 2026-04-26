@@ -1,0 +1,231 @@
+@import './design-system.css';
+
+* {
+    font-family: var(--font-family-base);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h3,
+h5,
+p,
+cite {
+    color: var(--color-text-primary);
+}
+
+.btn,
+a {
+    cursor: pointer;
+}
+
+/* 按鈕 */
+.btn-primary {
+    background-color: var(--btn-primary);
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary);
+}
+
+/* header */
+
+header {
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.16);
+
+    .btn {
+        background-color: var(--btn-header);
+    }
+}
+
+header a {
+    color: var(--color-text-secondary);
+    font-size: 15px;
+
+    &:hover {
+        transition: all .2s;
+        color: var(--color-primary-500);
+    }
+}
+
+.site-nav__cta:hover {
+    box-shadow: 0 5px 10px #bababa;
+}
+
+/* 下拉選單 */
+.nav-sublist {
+    position: absolute;
+    /* 使用 display: none 會造成上層項目移開鼠標懸浮時，整個下拉選單消失 */
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 0px 0px 2px 2px;
+    background-color: #fff;
+    z-index: 200;
+    transition: visibility 0.5s, opacity 0.5s;
+    box-shadow: 0 8px 10px 0 rgba(37, 41, 50, 0.1);
+}
+
+.nav-sublist li {
+    padding: 15px 6px;
+    margin: 0 10px;
+    border-bottom: 1px solid #f3f4f5;
+}
+
+.nav-sublist li:last-child {
+    border-bottom: none;
+}
+
+/* 下拉選單被鼠標懸浮時，也要能夠持續顯示 */
+#dropdown:hover .nav-sublist,
+.nav-sublist:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+main {
+    height: auto;
+    background-image: url('https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_form_background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+}
+
+/* hero section*/
+.hero {
+    background-image: url('https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_%E9%A6%96%E5%9C%96.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 80px;
+}
+
+.hero__subtitle {
+    font-family: var(--font-family-secondary);
+}
+
+/* services section */
+.services {
+    background-image: url('https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_country.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* features section */
+.features {
+    background-image: url('images/feature-bg-1.png'), url('images/feature-bg-2.png');
+    background-size: contain, contain;
+    background-position: -50px 10%, 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* clients section */
+.clients__tabs {
+    flex-wrap: wrap;
+}
+
+.tabs__label {
+    color: #666666;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+
+.tabs__radio {
+    display: none;
+}
+
+.tabs__content {
+    order: 1;
+    width: 100%;
+    line-height: 1.5;
+    display: none;
+    border-top: 1px solid #eee;
+}
+
+.tabs__radio:checked+.tabs__label {
+    color: var(--color-text-primary);
+    border-bottom: 4px solid var(--color-primary-500);
+}
+
+.tabs__radio:checked+.tabs__label+.tabs__content {
+    display: initial;
+}
+
+.company-img {
+    aspect-ratio: 4/3;
+    flex-grow: 0;
+    flex-basis: auto;
+    width: 16.6%;
+    height: auto;
+    object-fit: contain;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: all .5s;
+    }
+}
+
+/* lead-form section */
+.form-field input,
+.form-field select {
+    line-height: 1.6;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    background-color: #fff;
+    outline: none;
+    margin-top: 10px;
+    padding: 10px 12px;
+    width: 480px;
+}
+
+.form-field option {
+    color: #999999;
+    padding: 8px 10px;
+}
+
+/* footer */
+footer {
+    position: relative;
+    background: var(--color-text-primary);
+    color: var(--color-gray-300);
+
+    p {
+        color: var(--color-gray-300);
+
+    }
+
+    h3 {
+        font: 13px Montserrat, Arial, Helvetica, sans-serif;
+        color: var(--color-gray-300);
+    }
+}
+
+.footer__copyright {
+    background: var(--color-black);
+
+    p,
+    a {
+        color: var(--color-gray-500);
+
+    }
+}
+
+/* 至頂按鈕 */
+.top-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 0;
+    text-align: center;
+    align-content: center;
+    display: block;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px 3px 0 0;
+    opacity: 0.8;
+    background: #000000;
+
+    &:hover {
+        transition: all ease-in-out .3s;
+        background-color: var(--btn-secondary);
+    }
+}

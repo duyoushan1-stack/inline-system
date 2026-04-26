@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="%%sitename%% 是一套幫助忙碌餐廳員工、經理、老闆運作地更好的生產力工具。我們的使命是讓餐廳用更有效率的營運方式賺取更多收益，提供線上訂位、排隊管理、桌位管理和線上訂餐等多合一解決方案，填寫資訊即可立刻免費體驗看看！">
+    <link rel="shortcut icon" href="https://inline.company/wp-content/uploads/2018/03/inline-x76@2x.png">
+    <link rel="apple-touch-icon" href="https://inline.company/wp-content/uploads/2018/03/inline-x76@2x.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/1340c168c8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" async="" charset="utf-8"
+        src="https://www.gstatic.com/recaptcha/releases/gTpTIWhbKpxADzTzkcabhXN4/recaptcha__en.js"
+        crossorigin="anonymous"
+        integrity="sha384-H/5bR8BVxoDZIIp1lThXvsuAj/gHvImPQ0kayVpCevmOrRalo0FwJubK3EoX8w37"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>inline 訂候位系統 - 預約、排隊、訂餐、CRM，一台 iPad 搞定</title>
+</head>
+
+<body>
+    <header class="site-header h-[90px] w-full bg-white px-22 flex justify-between items-center z-999 fixed">
+        <a class="site-logo" href="#">
+            <img class="w-[90px]" src="https://inline.company/wp-content/uploads/2019/07/logo-01.png" alt="site-brand">
+        </a>
+        <nav class="site-nav flex justify-center items-center">
+            <ul class="nav-list flex gap-[30px] pr-[35px]">
+                <li class="nav-item"><a href="">合作夥伴</a></li>
+                <li class="nav-item" id="dropdown">
+                    <a href="">主要服務</a>
+                    <ul class="nav-sublist mt-8 w-50">
+                        <li class="nav-subitem">
+                            <a href="https://inline.app/zh/why-inline">inline 特色</a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="https://inline.app/zh/features">訂位管理</a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="https://inline.app/zh/queuing">候位管理</a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="https://inline.app/zh/onlineorder">線上外帶/外送服務</a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="https://inline.app/zh/flexible_deposit">彈性訂金</a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="https://inline.app/zh/crm">顧客管理 CRM</a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="https://inline.app/zh/kocmarketing">微網紅行銷方案</a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="https://inline.app/zh/restaurantmarketing">餐廳數位行銷方案</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="">客戶推薦</a></li>
+                <li class="nav-item"><a href="">品牌合作</a></li>
+                <li class="nav-item"><a href="">申請試用</a></li>
+                <li class="nav-item"><a href="">消費者常見問題</a></li>
+            </ul>
+            <button
+                class="site-nav__cta btn flex justify-center items-center w-[188px] text-white rounded-[30px] px-[10px] py-1.5">
+                <img class="w-[27px] h-5 mr-[10px]" src="https://inline.imgix.net/images/ot-logo-white.png"
+                    alt="btn-img">
+                <p class="font-bold text-lg">
+                    <a class="!text-white !text-lg" href="https://lihi1.com/fR0SH" target="_blank"> 餐廳隨時訂
+                    </a>
+                </p>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <!-- hero section -->
+        <section class="hero h-[90vh] flex">
+            <!-- 120px + header 高度 90px = 210px -->
+            <div class="hero__content w-[1200px] mx-auto pt-[210px]">
+                <h1 class="hero__title text-[44px] font-bold">接待，<span class="text-[#ff6337]">不再手忙腳亂</span></h1>
+                <h2 class="hero__subtitle text-xl font-bold mb-15">Reception, no longer a hassle</h2>
+                <div class="hero__desc leading-[2] mb-[70px]">
+                    <p>inline 是一套專供餐廳經營者使用，</p>
+                    <p>以雲端作業將訂位流程自動化，</p>
+                    <p>提高效率、減低錯誤的雲端管理系統。</p>
+                </div>
+                <div class="hero__action">
+                    <button class="btn btn-primary text-white text-sm py-2.5 px-5 rounded-[7px] font-bold">
+                        <a href="https://inline.app/zh/#try_now" target="_blank"> 立即試用
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- services section -->
+        <section class="services h-[80vh] text-center">
+            <div class="services__content w-[1200px] mx-auto pt-30 leading-[2]">
+                <p>inline 的服務範圍已拓展到台灣、香港、日本、馬來西亞、新加坡、</p>
+                <p>泰國、美國及世界其他地區，並支援多國語系操作介面。</p>
+            </div>
+        </section>
+        <!-- features section -->
+        <section class="features flex h-auto text-center pb-[180px]">
+            <div class="features__content w-[1200px] px-5 mx-auto">
+                <h2 class="features__title text-[#ec6300] text-[26.667px] font-bold mb-10">強大的生產力工具</h2>
+                <h3 class="features__subtitle text-[32px] font-bold mb-20">inline 三大管理功能，提高訂位效率</h3>
+                <div class="features__group flex gap-10">
+                    <div class="features__media flex-1 pt-20 -ml-10">
+                        <img src="https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_%E8%A8%82%E4%BD%8D%E7%AE%A1%E7%90%86_TC-1.png"
+                            alt="候位管理圖">
+                    </div>
+                    <ul class="feature-list flex flex-col gap-10 flex-1 text-left">
+                        <h4 class="feature-list__title text-2xl text-[#064c8c] font-bold mb-5 ml-[70px]">候位管理</h4>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature1-1.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">資訊彙整，多重顯示</h5>
+                                <p>隨時都可快速瀏覽每日訂候位列表、桌位圖以及顧客資訊，訂位從各平台串連，皆多重顯示，一覽無遺。</p>
+                            </div>
+                        </li>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature1-2.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">⾃動確認訂位</h5>
+                                <p>顧客用餐前，系統再次自動寄送簡訊進行確認，降低人為疏失，訂位管理更有效率。</p>
+                            </div>
+                        </li>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature1-3.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">設定開放桌位時段</h5>
+                                <p>提供全客製化桌位配置圖，指定各時段可訂位人數，不怕超接顧客，還可以設定VIP桌，控位一手掌握。</p>
+                            </div>
+                        </li>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature1-4.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">預收訂⾦管理</h5>
+                                <p>inline 提供預收訂金功能，系統也與金流串接，顧客可直接信用卡線上付款；平板上隨時追蹤顧客繳交訂金狀況，帳務更順暢。</p>
+                            </div>
+                        </li>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature1-5.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">雲端運算管理排程</h5>
+                                <p>我們提供了強大的雲端資料庫系統，可即時更新資料，多平台同步運作，精準又安全，管理訂位更方便。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="features__group flex flex-row-reverse gap-10 my-20">
+                    <div class="features__media flex-1 pt-40 ">
+                        <img src="https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_%E5%80%99%E4%BD%8D%E7%AE%A1%E7%90%86_TC.png"
+                            alt="候位管理圖">
+                    </div>
+                    <ul class="feature-list flex flex-col gap-10 flex-1 text-left">
+                        <h4 class="feature-list__title text-2xl text-[#064c8c] font-bold mb-5 ml-[70px]">候位管理</h4>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature2-1.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">多種顧客排隊登記方式</h5>
+                                <p>顧客除了可以使用 iPad 觸控、Kiosk 螢幕登記之外，也可支援 QR code 掃描報到及候位電視牆功能，幫助餐廳疏通排隊人潮。</p>
+                            </div>
+                        </li>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature2-2.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">⾃動安排候位時序</h5>
+                                <p>候位登記時，系統自動為顧客排號，每組客人都有自己專屬的一組候位序號，排隊報到沒煩惱。</p>
+                            </div>
+                        </li>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature2-3.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">顧客不需下載app</h5>
+                                <p>登記候位完立即傳送簡訊連結，顧客完全不需下載多餘的 app ，隨時查看現場候位排號狀況。</p>
+                            </div>
+                        </li>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature2-4.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">一鍵叩客</h5>
+                                <p>輪到該組客人後，餐廳一鍵呼叫顧客回店用餐，省去人工電話確認的時間，為餐廳提供更高的待客效率。</p>
+                            </div>
+                        </li>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature2-5.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">支援遠端監控</h5>
+                                <p>即使餐廳人員不在現場，手機只要連上網路，店家即可遠端監控訂候位狀態，安心度爆表。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="features__group flex gap-10">
+                    <div class="features__media flex-1 pt-20 -ml-10">
+                        <img src="https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_%E9%A1%A7%E5%AE%A2%E7%AE%A1%E7%90%86_TC.png"
+                            alt="顧客管理圖">
+                    </div>
+                    <ul class="feature-list flex flex-col gap-10 flex-1 text-left">
+                        <h4 class="feature-list__title text-2xl text-[#064c8c] font-bold mb-5 ml-[70px]">顧客管理</h4>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature3-1.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">顧客資料庫</h5>
+                                <p>餐廳可隨時調閱顧客跨餐廳、跨分店消費記錄，每筆訂候位都會存入後台，建立餐飲業龐大資料庫。</p>
+                            </div>
+                        </li>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature3-2.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">記錄顧客喜好</h5>
+                                <p>這位客人不吃辣？這位客人喜歡坐室外？inline 全部幫你記錄起來，餐廳可自訂客人喜好，往後對回頭客的新進訂候位就可以貼心應對！</p>
+                            </div>
+                        </li>
+                        <li class="feature-card flex leading-[2]">
+                            <img class="feature-card__media w-11 h-11" src="images/feature3-3.png" alt="">
+                            <div class="feature-card__content ml-[26px]">
+                                <h5 class="feature-card__title text-[1.2rem] font-bold mb-[10px]">統計數據管理</h5>
+                                <p>針對不同顧客，inline 提供輔助行銷、數據收集、統計報表等顧客關係管理工具，增加餐廳好感度，有效提高顧客回頭率。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- clients section -->
+        <section class="clients text-center">
+            <div class="clients__content w-[1200px] px-5 mx-auto">
+                <h2 class="clients text-[28px] font-bold mb-30 mt-15">正在使用inline的合作夥伴…</h2>
+                <!-- tab 區域 -->
+                <div class="clients__tabs w-[1200px] mx-auto flex justify-center">
+                    <input type="radio" class="tabs__radio" name="tabs-item" id="tab1" checked>
+                    <label for="tab1" class="tabs__label">連鎖餐飲集團</label>
+                    <div class="tabs__content">
+                        <div class="companies flex flex-wrap justify-start">
+                            <img class="company-img" src="images/company/tab1-1.png" alt="">
+                            <img class="company-img" src="images/company/tab1-2.png" alt="">
+                            <img class="company-img" src="images/company/tab1-3.png" alt="">
+                            <img class="company-img" src="images/company/tab1-4.png" alt="">
+                            <img class="company-img" src="images/company/tab1-5.png" alt="">
+                            <img class="company-img" src="images/company/tab1-6.png" alt="">
+                            <img class="company-img invisible" src=".">
+                            <img class="company-img invisible" src=".">
+                            <img class="company-img invisible" src=".">
+                            <img class="company-img" src="images/company/tab1-7.png" alt="">
+                            <img class="company-img" src="images/company/tab1-8.png" alt="">
+                            <img class="company-img" src="images/company/tab1-9.png" alt="">
+                            <img class="company-img" src="images/company/tab1-10.png" alt="">
+                            <img class="company-img" src="images/company/tab1-11.png" alt="">
+                            <img class="company-img" src="images/company/tab1-12.png" alt="">
+                            <img class="company-img" src="images/company/tab1-13.png" alt="">
+                            <img class="company-img" src="images/company/tab1-14.png" alt="">
+                            <img class="company-img" src="images/company/tab1-15.png" alt="">
+                            <img class="company-img" src="images/company/tab1-16.png" alt="">
+                            <img class="company-img" src="images/company/tab1-17.png" alt="">
+                            <img class="company-img" src="images/company/tab1-18.png" alt="">
+                            <img class="company-img" src="images/company/tab1-19.png" alt="">
+                            <img class="company-img" src="images/company/tab1-20.png" alt="">
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-item" id="tab2">
+                    <label for="tab2" class="tabs__label">五星級飯店</label>
+                    <div class="tabs__content">
+                        <div class="companies flex flex-wrap justify-start">
+                            <img class="company-img" src="images/company/tab2-1.png" alt="">
+                            <img class="company-img" src="images/company/tab2-2.png" alt="">
+                            <img class="company-img" src="images/company/tab2-3.png" alt="">
+                            <img class="company-img" src="images/company/tab2-4.png" alt="">
+                            <img class="company-img" src="images/company/tab2-5.png" alt="">
+                            <img class="company-img" src="images/company/tab2-6.png" alt="">
+                            <img class="company-img" src="images/company/tab2-7.png" alt="">
+                            <img class="company-img" src="images/company/tab2-8.png" alt="">
+                            <img class="company-img" src="images/company/tab2-9.png" alt="">
+                            <img class="company-img" src="images/company/tab2-10.png" alt="">
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-item" id="tab3">
+                    <label for="tab3" class="tabs__label">百貨賣場</label>
+                    <div class="tabs__content">
+                        <div class="companies flex flex-wrap justify-start">
+                            <img class="company-img" src="images/company/tab3-1.png" alt="">
+                            <img class="company-img" src="images/company/tab3-2.png" alt="">
+                            <img class="company-img" src="images/company/tab3-3.png" alt="">
+                            <img class="company-img" src="images/company/tab3-4.png" alt="">
+                            <img class="company-img" src="images/company/tab3-5.png" alt="">
+                            <img class="company-img" src="images/company/tab3-6.png" alt="">
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-item" id="tab4">
+                    <label for="tab4" class="tabs__label">米其林等級</label>
+                    <div class="tabs__content">
+                        <div class="companies flex flex-wrap justify-start">
+                            <img class="company-img" src="images/company/tab4-1.png" alt="">
+                            <img class="company-img" src="images/company/tab4-2.png" alt="">
+                            <img class="company-img" src="images/company/tab4-3.png" alt="">
+                            <img class="company-img" src="images/company/tab4-4.png" alt="">
+                            <img class="company-img" src="images/company/tab4-5.png" alt="">
+                            <img class="company-img" src="images/company/tab4-6.png" alt="">
+                            <img class="company-img" src="images/company/tab4-7.png" alt="">
+                            <img class="company-img" src="images/company/tab4-8.png" alt="">
+                            <img class="company-img" src="images/company/tab4-9.png" alt="">
+                            <img class="company-img" src="images/company/tab4-10.png" alt="">
+                            <img class="company-img" src="images/company/tab4-11.png" alt="">
+                            <img class="company-img" src="images/company/tab4-12.png" alt="">
+                            <img class="company-img" src="images/company/tab4-13.png" alt="">
+                            <img class="company-img" src="images/company/tab4-14.png" alt="">
+                            <img class="company-img" src="images/company/tab4-15.png" alt="">
+                            <img class="company-img" src="images/company/tab4-16.png" alt="">
+                            <img class="company-img" src="images/company/tab4-17.png" alt="">
+                            <img class="company-img" src="images/company/tab4-18.png" alt="">
+                            <img class="company-img" src="images/company/tab4-19.png" alt="">
+                            <img class="company-img" src="images/company/tab4-20.png" alt="">
+                            <img class="company-img" src="images/company/tab4-21.png" alt="">
+                            <img class="company-img" src="images/company/tab4-22.png" alt="">
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-item" id="tab5">
+                    <label for="tab5" class="tabs__label">特色名店</label>
+                    <div class="tabs__content">
+                        <div class="companies flex flex-wrap justify-start">
+                            <img class="company-img" src="images/company/tab5-1.png" alt="">
+                            <img class="company-img" src="images/company/tab5-2.png" alt="">
+                            <img class="company-img" src="images/company/tab5-3.png" alt="">
+                            <img class="company-img" src="images/company/tab5-4.png" alt="">
+                            <img class="company-img" src="images/company/tab5-5.png" alt="">
+                            <img class="company-img" src="images/company/tab5-6.png" alt="">
+                            <img class="company-img" src="images/company/tab5-7.png" alt="">
+                            <img class="company-img" src="images/company/tab5-8.png" alt="">
+                            <img class="company-img" src="images/company/tab5-9.png" alt="">
+                            <img class="company-img" src="images/company/tab5-10.png" alt="">
+                            <img class="company-img" src="images/company/tab5-11.png" alt="">
+                            <img class="company-img" src="images/company/tab5-12.png" alt="">
+                            <img class="company-img" src="images/company/tab5-13.jpg" alt="">
+                            <img class="company-img" src="images/company/tab5-14.png" alt="">
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-item" id="tab6">
+                    <label for="tab6" class="tabs__label">海外</label>
+                    <div class="tabs__content">
+                        <div class="companies flex flex-wrap justify-start">
+                            <img class="company-img" src="images/company/tab6-1.png" alt="">
+                            <img class="company-img" src="images/company/tab6-2.png" alt="">
+                            <img class="company-img" src="images/company/tab6-3.png" alt="">
+                            <img class="company-img" src="images/company/tab6-4.png" alt="">
+                            <img class="company-img" src="images/company/tab6-5.png" alt="">
+                            <img class="company-img" src="images/company/tab6-6.png" alt="">
+                            <img class="company-img" src="images/company/tab6-7.png" alt="">
+                            <img class="company-img" src="images/company/tab6-8.png" alt="">
+                            <img class="company-img" src="images/company/tab6-9.png" alt="">
+                            <img class="company-img" src="images/company/tab6-10.png" alt="">
+                            <img class="company-img" src="images/company/tab6-11.png" alt="">
+                            <img class="company-img" src="images/company/tab6-12.png" alt="">
+                            <img class="company-img" src="images/company/tab6-13.png" alt="">
+                            <img class="company-img" src="images/company/tab6-14.png" alt="">
+                            <img class="company-img" src="images/company/tab6-15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial section -->
+        <section class="testimonial text-center mb-10">
+            <div class="testimonial__content w-[1200px] px-5 mx-auto">
+                <h2 class="testimonial__quote text-[#ff6600] text-[29.333px] font-bold mt-15">“ inline 是目前世界上最好用的</h2>
+                <h2 class="testimonial__quote text-[#ff6600] text-[29.333px] font-bold mb-[50px]">訂候位控管、帶位工具及顧客管理系統 ”
+                </h2>
+                <cite class="not-italic text-[14pt]">– 許禮麟 / 金田餐飲集團總經理</cite>
+            </div>
+        </section>
+        <!-- form section -->
+        <section class="lead-form text-center">
+            <div class="lead-form__content w-[740px] px-5 pb-[50px] rounded-[20px] bg-white mx-auto">
+                <h2 class="lead-form__title mb-5 pt-10 text-[20pt] text-[#064c8c] font-bold">Hi 餐廳老闆</h2>
+                <div class="lead-form__desc mb-[30px]">
+                    <p class="font-bold mb-5">此表單為提供餐廳試用系統，<span class="font-bold text-[#ff0000]">我們無法提供代訂服務</span></p>
+                    <p class="font-bold mb-[35px]">消費者訂位、訂餐請 > <a class="font-bold !text-[#000080]"
+                            href="https://www.opentable.com.tw/" target="_blank">查詢附近餐廳</a></p>
+                    <p class="leading-[2] h-[90px]">現在申請可享 14 天免費試用＋專人導入教學 <br>
+                        快讓 inline app 成為您餐廳的最佳助手！</p>
+                </div>
+                <!-- 表單填寫區域 -->
+                <form action="#" class="lead-form__form flex flex-col items-center gap-[10px]">
+                    <div class="form-field flex flex-col">
+                        <label for="name">聯絡人姓名 (必填)</label>
+                        <input type="text" name="name" placeholder="e.g. Mayer" required>
+                    </div>
+                    <div class="form-field flex flex-col">
+                        <label for="phone-number">手機號碼 (必填)</label>
+                        <input type="number" name="phone-number" placeholder="e.g. 8526377XXXX" required>
+                    </div>
+                    <div class="form-field flex flex-col">
+                        <label for="email">電子信箱 (必填)</label>
+                        <input type="email" name="email" placeholder="e.g. welcome@inline.app" required>
+                    </div>
+                    <div class="form-field flex flex-col">
+                        <label for="restaurant">您的餐廳名稱 (必填)</label>
+                        <input type="text" name="restaurant" placeholder="e.g. Mayer" required>
+                    </div>
+                    <div class="form-field flex flex-col">
+                        <label for="countries">您餐廳的所在國家 (必填)</label>
+                        <select name="countries" id="countries" class="text-center text-[#999999]">
+                            <option value="select" disabled selected>-請選擇國家-</option>
+                            <option value="Australia">澳大利亞</option>
+                            <option value="Canada">加拿大</option>
+                            <option value="Hong Kong">香港</option>
+                            <option value="Indonesia">印尼</option>
+                            <option value="Japan">日本</option>
+                            <option value="South Korea">韓國</option>
+                            <option value="Macau">澳門</option>
+                            <option value="Malaysia">馬來西亞</option>
+                            <option value="New Zealand">紐西蘭</option>
+                            <option value="Philippines">菲律賓</option>
+                            <option value="Singapore">新加坡</option>
+                            <option value="Taiwan">台灣</option>
+                            <option value="Thailand">泰國</option>
+                            <option value="United States">美國</option>
+                            <option value="Vietnam">越南</option>
+                        </select>
+                    </div>
+                    <div class="form-field flex flex-col">
+                        <label for="street">Street (Required)</label>
+                        <input type="text" name="street" required>
+                    </div>
+                    <div class="form-field flex flex-col">
+                        <label for="job">您的職稱（必填）</label>
+                        <input type="text" name="job" required>
+                    </div>
+                    <div class="form-field flex flex-col">
+                        <label for="usage-condition">是否有使用過其他訂候位管理系統？（必填）</label>
+                        <input type="text" name="usage-condition" required>
+                    </div>
+                    <div class="form-field flex flex-col">
+                        <label for="interests">您對 inline 的哪個功能有興趣？（必填）</label>
+                        <select name="interests" id="interests" class="text-center text-[#999999]">
+                            <option value="select" disabled selected>-請選擇-</option>
+                            <option value="reservation">訂候位管理</option>
+                            <option value="takeout_delivery">外帶外送服務</option>
+                            <option value="both">兩者皆有興趣</option>
+                        </select>
+                    </div>
+                    <div class="form-field flex flex-col">
+                        <label for="information">您是從哪裡獲得inline的資訊？（必填）</label>
+                        <select name="information" id="information" class="text-center text-[#999999]">
+                            <option value="select" disabled selected>-請選擇-</option>
+                            <option value="google_search">Google 搜尋</option>
+                            <option value="social_media">社群媒體（Facebook / Instagram...等）</option>
+                            <option value="web_ads">網站廣告</option>
+                            <option value="friend_referral">朋友介紹</option>
+                            <option value="other_restaurant">其他餐廳</option>
+                            <option value="opentable">Opentable</option>
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="offline_event">線下活動</option>
+                            <option value="inline_call">inline 專人電洽</option>
+                        </select>
+                    </div>
+                    <!-- 機器人認證 - 目前沒有實際功能 -->
+                    <div class="rebot w-[304px] h-[78px] place-self-start pl-27.5">
+                        <iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-89cp8kb8k133"
+                            frameborder="0" scrolling="no"
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeJmOEUAAAAAG-f74PwJqRErw0ztmDK0csvrsd4&amp;co=aHR0cHM6Ly9pbmxpbmUuYXBwOjQ0Mw..&amp;hl=en&amp;v=gTpTIWhbKpxADzTzkcabhXN4&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=3mf2fr2rcagw"></iframe>
+                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                    </div>
+                    <!-- 送出表單按鈕 -->
+                    <div class="form-field__submit my-5">
+                        <button type="submit"
+                            class="btn btn-secondary text-white text-sm w-30 h-10 rounded-full font-bold">送出</button>
+                    </div>
+                    <div class="form-filed__desc text-[8pt]">
+                        <p>此表單為提供餐廳試用系統，請勿在此進行餐廳線上訂位，如需訂位請直接聯繫餐廳</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- contact section -->
+        <section class="contact text-center mt-20">
+            <div class="contact__content w-[1200px] px-5 mx-auto flex flex-col justify-center gap-[10px]">
+                <div class="contact__header mb-10">
+                    <h2 class="contact__title text-[32px] font-bold mb-[30px]">
+                        inline 還有什麼強大之處？
+                    </h2>
+                    <div class="contact__cta">
+                        <button class="btn btn-primary text-white text-xl py-5 px-7.5 rounded-[7px] font-bold h-[62px]">
+                            <a href="https://inline.app/zh/why-inline" target="_blank"> 點擊了解更多
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="contact__info mt-10 pb-20 flex justify-around">
+                    <div class="contact__info-item flex flex-col flex-1 gap-7.5 px-5 border-r-1 border-black/50">
+                        <h3 class="contact__info-title font-bold text-[16pt] text-[#333333]">
+                            直接電話聯繫我們
+                        </h3>
+                        <p class="contact__info-text leading-[2]">
+                            電話客服時間：<br>
+                            星期一 ~ 星期五 10:00 ~ 19:00
+                        </p>
+                        <a class="contact__info-phone font-bold text-2xl" href="tel:0223223414">+886 – 2 – 2322 –
+                            3414</a>
+                    </div>
+                    <div class="contact__info-item flex flex-col flex-1 gap-7.5 px-5">
+                        <h3 class="contact__info-title font-bold text-[16pt] text-[#333333]">
+                            立即免費試用 inline
+                        </h3>
+                        <p class="contact__info-text leading-[2]">
+                            免費前兩週試用期，歡迎填寫表單聯絡我們，<br>
+                            我們會有專人盡快回覆您！
+                        </p>
+                        <div class="contact__info-cta">
+                            <button class="btn btn-secondary text-white text-sm py-2.5 px-5 rounded-[7px] font-bold">
+                                <a href="https://inline.app/zh/contact" target="_blank">立即免費試用</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="fooer__content w-[1200px] px-5 mx-auto pt-15 pb-5 flex flex-col gap-10">
+            <div class="footer__info flex flex-col gap-[25px]">
+                <div class="footer__logo">
+                    <img class="w-[90px]" src="https://inline.company/wp-content/uploads/2019/07/logo-01.png"
+                        alt="footer__logo">
+                </div>
+                <div class="footer__info-area">
+                    <h2 class="footer__info-taxid mb-[14px] font-bold">台灣｜統編 52384127</h2>
+                    <p class="footer__info-text text-[12.3px]">100009<br>台北市中正區北平東路30-1號5樓</p>
+                </div>
+                <div class="footer__info-area">
+                    <h2 class="footer__info-taxid mb-[14px] font-bold">香港｜統編 2303318</h2>
+                    <p class="footer__info-text text-[12.3px]">香港上環皇后大道中181號<br>新紀元廣場低座24樓2406B室</p>
+                </div>
+                <div class="footer__info-area">
+                    <h2 class="footer__info-taxid mb-[14px] font-bold">新加坡｜統編 201900515R</h2>
+                    <p class="footer__info-text text-[12.3px]">160 Robinson Road, #14-04 <br>
+                        Singapore Business <br>
+                        Federation Centre, Singapore <br>
+                        068914
+                    </p>
+                </div>
+                <div class="footer__info-area">
+                    <h2 class="footer__info-taxid mb-[14px] font-bold">澳洲｜統編 648 810 600</h2>
+                    <p class="footer__info-text text-[12.3px]">Level 1/580 Church St, Richmond <br>
+                        VIC 3121 <br>
+                    </p>
+                </div>
+                <div class="footer__info-area">
+                    <h2 class="footer__info-taxid mb-[14px] font-bold">日本</h2>
+                    <p class="footer__info-text text-[12.5px] mb-4">〒105-6009
+                    </p>
+                    <p class="footer__info-text text-[12.3px]">東京都港区虎ノ門4丁目3番1号 <br>
+                        城山トラストタワー9階 <br>
+                        東京赤坂法律事務所内
+                    </p>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <h3 class="footer__contact-title pb-5">Contact us</h3>
+                <p class="footer__contact-text leading-[2] pb-4">聯絡電話：+886 (02) 2322-3414<br>
+                    服務時間：週一至週五 10:00–19:00</p>
+                <p class="footer__contact-text leading-[2] pb-4">潛在合作或既有店家支援<br>
+                    <a class="c-link c-link--underline" href="mailto:support@inline.app" target="_blank"
+                        rel="noopener noreferrer" data-stringify-link="mailto:support@inline.app"
+                        data-sk="tooltip_parent" aria-haspopup="menu">support@inline.app</a>
+                </p>
+                <p class="footer__contact-text leading-[2] pb-4">消費者訂候位／外帶外送相關問題<br>
+                    <a class="c-link c-link--underline" href="mailto:patron-help@inline.app" target="_blank"
+                        rel="noopener noreferrer" data-stringify-link="mailto:patron-help@inline.app"
+                        data-sk="tooltip_parent" aria-haspopup="menu">patron-help@inline.app</a>
+                </p>
+                <p class="footer__contact-text leading-[2] pb-4">異業合作洽談或餐飲新聞稿聯繫
+                    <a href="mailto:marketing@inline.tw">marketing@inline.tw</a>
+                </p>
+            </div>
+            <div class="footer__language">
+                <h3 class="footer__language-title pb-5">語言</h3>
+                <ul class="footer__language-list">
+                    <li class="footer__language-item p-[10px] pl-0 border-b-1 border-[#384044]">
+                        <a href="https://inline.app" data-lang="en">
+                            <span>English (US)</span>
+                        </a>
+                    </li>
+                    <li class="footer__language-item p-[10px] pl-0 border-b-1 border-[#384044] text-black">
+                        繁體中文
+                    </li>
+                    <li class="footer__language-item p-[10px] pl-0 border-b-1 border-[#384044]">
+                        <a href="https://inline.app/jp/" data-lang="jp">
+                            <span>日本語</span>
+                        </a>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="footer__media-ig">
+                <h3 class="footer__media-title pb-5">Instagram</h3>
+            </div>
+            <div class="footer__media-fb h-[66px]">
+                <h3 class="footer__media-title pb-5"><a href="https://www.facebook.com/inlineapps/">Facebook Page</a>
+                </h3>
+            </div>
+        </div>
+        <div class="footer__copyright px-5 pt-[15px] pb-[13px]">
+            <div class="footer__copyright-content w-[1200px] mx-auto flex justify-between items-center">
+                <p class="footer__copyright-text">© 2025 inline 版權所有。
+                    <a href="https://inline.app/zh/tos">服務條款 ｜ </a>
+                    <a href="https://inline.app/zh/privacy">隱私權政策</a>
+                </p>
+                <div class="footer__copyright-social-media">
+                    <ul class="social-media__list flex">
+                        <li class="social-media__item w-10 h-10 text-center content-center">
+                            <a class="text-[21px]" href="https://www.facebook.com/inlineapps/" target="_blank"
+                                title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-media__item w-10 h-10 text-center content-center">
+                            <a class="text-[21px]" href="https://www.instagram.com/inline.tw/" target="_blank"
+                                title="Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social-media__item w-10 h-10 text-center content-center">
+                            <a class="text-[21px]" href="https://www.youtube.com/channel/UCi7jKrdiXckUqBdCLjMweLQ"
+                                target="_blank" title="YouTube">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </li>
+                        <li class="social-media__item w-10 h-10 text-center content-center">
+                            <a class="text-[21px]" href="https://medium.com/inline.tw" target="_blank" title="Medium">
+                                <i class="fa fa-medium"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 返回首頁頂層 -->
+        <a class="top-btn w-[42px] h-9" href="#">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </footer>
+</body>
+
+</html>
