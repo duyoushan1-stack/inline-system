@@ -77,7 +77,8 @@ header a {
 }
 
 /* 下拉選單被鼠標懸浮時，也要能夠持續顯示 */
-#dropdown:hover .nav-sublist,
+#dropdown-1:hover .nav-sublist,
+#dropdown-2:hover .nav-sublist,
 .nav-sublist:hover {
     visibility: visible;
     opacity: 1;
@@ -210,7 +211,7 @@ footer {
     }
 }
 
-/* 至頂按鈕 */
+/* 置頂按鈕 */
 .top-btn {
     position: fixed;
     right: 24px;
@@ -221,11 +222,17 @@ footer {
     color: #fff;
     text-align: center;
     border-radius: 3px 3px 0 0;
-    opacity: 0.8;
+    opacity: 0;
     background: #000000;
+    transition: all ease-in-out .3s;
 
     &:hover {
         transition: all ease-in-out .3s;
         background-color: var(--btn-secondary);
     }
+}
+
+/* 網頁滾動 置頂按鈕顯示動畫 */
+.show {
+    opacity: 0.8;
 }
